@@ -1,10 +1,10 @@
 const { anthropic } = require('../../config');
-const { buscarHistoricoConversa } = require('../services/cliente');
-const { buscarProdutos } = require('../services/produto');
+const { buscarHistoricoConversa } = require('../services/restaurante');
+const { buscarProdutos } = require('../services/restaurante');
 const { enviarMensagemWhatsapp } = require('../services/whatsapp');
-const { registrarPedido } = require('../services/pedido');
-const { registrarReserva } = require('../services/reserva');
-const { registrarReclamacao } = require('../services/reclamacao');
+const { registrarPedido } = require('../services/restaurante');
+const { registrarReserva } = require('../services/restaurante');
+const { registrarReclamacao } = require('../services/restaurante');
 
 // Monta o system prompt personalizado para cada restaurante
 function montarSystemPrompt(restaurante, produtos) {
