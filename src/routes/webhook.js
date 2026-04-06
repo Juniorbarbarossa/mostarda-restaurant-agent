@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { processarMensagem } = require('../agents/agente');
 const { buscarRestaurantePorWhatsapp } = require('../services/restaurante');
-const { buscarOuCriarCliente, salvarMensagemConversa } = require('../services/cliente');
+const { buscarOuCriarCliente, salvarMensagemConversa } = require('../services/restaurante');
 
 // Verificação do webhook (Meta exige esse endpoint)
 router.get('/whatsapp', (req, res) => {
